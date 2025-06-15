@@ -1,5 +1,78 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
 body{
-    background: white;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: #0E7E12;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column
+}
+.card {
+    position: relative;    
+    width: 250px;
+    height: 350px;
+    border-radius: 1rem;
+    background-color: #ffffff;
+    align-content: space-between;
+    padding: 10px;
+    padding-bottom: 20px;
+}
+#top_symbol {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;   
+}
+#bottom_symbol {
+    display: flex;    
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: column;    
+    transform: rotate(180deg);
+}
+#middle_symbol {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 60%;
+    margin: 0;  
+    padding: 0;
+    font-size: 4rem;
+    font-weight: bold;    
+}
+#top_number, #bottom_number {
+    font-size: 2rem;
+    font-weight: bold;    
+}
+#top_symbol, #bottom_symbol {
+    font-size: 2rem;
+    font-weight: bold;
+}
+#generateCard {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #ffffff;
+    color: #333;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+}
+
+#generateCard:hover {
+    background-color: #333;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+#timer {
+    margin-top: 15px;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px #000;
 }

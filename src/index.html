@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <link rel="icon" href="./assets/img/4geeks.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
-
+    <title>Generador Cartas</title>
+    <link rel="stylesheet" href="style.css">
     <!-- Fontawesome is our recomended library for icons -->
     <link
       rel="stylesheet"
@@ -13,23 +13,32 @@
       integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
       crossorigin="anonymous"
     />
+    
+    
   </head>
   <body>
     <!-- Write your HTML code here, you can delete everything withing the body tags -->
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./assets/img/rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+    <div class="card">
+      <div id="top_symbol">
+        <div id="top_number">2</div>
+        <div id="top_logo">♦</div>
       </div>
-    </div>
+      <div id="middle_symbol">2</div> 
+      <div id="bottom_symbol">
+        <span id="bottom_number">2</span>
+        <span id="bottom_logo">♦</span>
+      </div>  
+    </div>   
+
+    <!-- Temporizador -->
+    <div id="timer">Próxima carta en: 15</div>
+
+    <!-- Botón para nueva carta -->
+    <button id="generateCard">Nueva Carta</button>
 
     <!-- Do not delete this script tag, this is what connects your HTML with the Javascript code -->
-    <script type="module" src="/app.js"></script>
+    
+    <script type="module" src="./src/app.js"></script>
+
   </body>
 </html>
